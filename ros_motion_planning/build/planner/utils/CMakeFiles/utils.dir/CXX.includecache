@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/utec/catkin_ws/src/ros_motion_planning/src/planner/utils/include/global_planner.h
+unordered_set
+-
+utils.h
+/home/utec/catkin_ws/src/ros_motion_planning/src/planner/utils/include/utils.h
+
+/home/utec/catkin_ws/src/ros_motion_planning/src/planner/utils/include/utils.h
+cmath
+-
+array
+-
+vector
+-
+
+/home/utec/catkin_ws/src/ros_motion_planning/src/planner/utils/src/global_planner.cpp
+global_planner.h
+/home/utec/catkin_ws/src/ros_motion_planning/src/planner/utils/src/global_planner.h
+
+/home/utec/catkin_ws/src/ros_motion_planning/src/planner/utils/src/utils.cpp
+utils.h
+/home/utec/catkin_ws/src/ros_motion_planning/src/planner/utils/src/utils.h
+

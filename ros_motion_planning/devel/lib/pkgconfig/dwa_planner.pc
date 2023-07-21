@@ -1,0 +1,8 @@
+prefix=/home/utec/catkin_ws/src/ros_motion_planning/devel
+
+Name: dwa_planner
+Description: Description of dwa_planner
+Version: 1.17.1
+Cflags: -I/home/utec/catkin_ws/src/ros_motion_planning/devel/include -I/home/utec/catkin_ws/src/ros_motion_planning/src/planner/local_planner/dwa_planner/include
+Libs: -L${prefix}/lib -ldwa_planner
+Requires: base_local_planner dynamic_reconfigure nav_msgs pluginlib sensor_msgs roscpp tf2 tf2_ros

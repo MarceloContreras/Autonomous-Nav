@@ -1,0 +1,22 @@
+<launch>
+	<node pkg="octomap_server" type="octomap_server_node" name="octomap_server">
+	<param name="resolution" value="0.05" />
+	
+	<!-- fixed map frame (set to 'map' if SLAM or localization running!) -->
+	<param name="frame_id" type="string" value="map" />
+	
+	<!-- maximum range to integrate (speedup!) -->
+	<param name="sensor_model/max_range" value="12.0" />
+	
+	<param name="filter_ground" value="true"/>
+	<param name="ground_filter/distance" value="0.005"/>
+	
+	<!-- robot base frame(default: base_footrpint)-->
+	<param name="base_frame_id" value="base_link" />
+	
+	<!-- data source to integrate (PointCloud2) -->
+	<remap from="cloud_in" to="/filtered_RGBD"/>
+	</node>
+	
+	<node pkg="orb_slam2_ros" type="rgbd_mapping.py" name="RGBD_mapping"/>
+</launch>

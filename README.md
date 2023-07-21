@@ -5,10 +5,13 @@ Also, it includes two planers: RRT (global planner) and DWA (local planer) where
 
 # Overview of components
 
+![alt text](overview.png)
+
 # Dependencies
 * Octomap
 * ros-navigation
 * Ultralytics
+* Depthimage_to_laserscan
 * Turtlebot3, simulations, and messages 
 
 # Steps for execution
@@ -40,3 +43,9 @@ Also, it includes two planers: RRT (global planner) and DWA (local planer) where
     chmod u+x ./main.sh
     ./main.sh
     ```
+# Contact
+
+  *marcelo.contreras@utec.edu.pe
+  *cesar.guillen@utec.edu.pe
+  *mauricio.rivera@utec.edu.pe
+  *edward.lopez.t@utec.edu.pe
